@@ -1,5 +1,5 @@
 "use client";
-
+import { assetUrl } from "@/lib/asset";
 import { useRef, useState, useCallback } from "react";
 
 const STATS = [
@@ -104,7 +104,7 @@ export default function AboutStats() {
             >
               {/* Image */}
               <img
-                src="/ship%20models/4cff0bc2fa0aee808326890d3dff78a3.jpg"
+                src={assetUrl("/ship%20models/4cff0bc2fa0aee808326890d3dff78a3.jpg")}
                 alt="NAVIS vessel"
                 style={{ width: "100%", height: "520px", objectFit: "cover", objectPosition: "center center", display: "block", transform: isHovered ? "scale(1.04)" : "scale(1)", transition: "transform 0.55s ease" }}
               />

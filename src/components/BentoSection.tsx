@@ -1,12 +1,12 @@
 "use client";
-
+import { assetUrl } from "@/lib/asset";
 import { useRef } from "react";
 import gsap from "gsap";
 
 const FAVOURITES = [
-  "/food/IMG_8017.JPG.jpeg",
-  "/food/IMG_8021.JPG.jpeg",
-  "/food/IMG_8046.JPG.jpeg",
+  assetUrl("/food/3e89e2427357de51493acfd309f1080e.jpg"),
+  assetUrl("/food/45cebad721dcb1b6693c3c9b7a1b8102.jpg"),
+  assetUrl("/food/ad26827251b614d261272b2a56a12feb.jpg"),
 ];
 
 export default function BentoSection() {
@@ -87,7 +87,7 @@ export default function BentoSection() {
             }}
           >
             <img
-              src="/new%20section%20card/7d29c0c8c9fe562cc1ac21887a15c3a0.jpg"
+              src={assetUrl("/new%20section%20card/7d29c0c8c9fe562cc1ac21887a15c3a0.jpg")}
               alt=""
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
@@ -146,7 +146,7 @@ export default function BentoSection() {
             }}
           >
             <img
-              src="/new%20section%20card/8e0d25662a646f0e8d4c438f8fa17c02.jpg"
+              src={assetUrl("/new%20section%20card/8e0d25662a646f0e8d4c438f8fa17c02.jpg")}
               alt=""
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
@@ -214,7 +214,7 @@ export default function BentoSection() {
             {/* Top image */}
             <div style={{ flex: "1 1 60%", position: "relative", overflow: "hidden" }}>
               <img
-                src="/new%20section%20card/e3dbc3c28d1765f946dcefba8fe0e6ce.jpg"
+                src={assetUrl("/new%20section%20card/e3dbc3c28d1765f946dcefba8fe0e6ce.jpg")}
                 alt=""
                 style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
               />

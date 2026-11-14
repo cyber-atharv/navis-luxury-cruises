@@ -2,20 +2,18 @@
 
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
+import { assetUrl } from "@/lib/asset";
 
 const IMAGES = [
-  "/the%20space/IMG_8014.JPG.jpeg",
-  "/the%20space/IMG_8024.JPG.jpeg",
-  "/the%20space/IMG_8025.JPG.jpeg",
-  "/the%20space/IMG_8026.JPG.jpeg",
-  "/the%20space/IMG_8027.JPG.jpeg",
-  "/the%20space/IMG_8028.JPG.jpeg",
-  "/the%20space/IMG_8035.PNG",
+  assetUrl("/the%20space/01.jpg"),
+  assetUrl("/the%20space/43f383b09e9d2766d9b3b9bb64425a06.jpg"),
+  assetUrl("/the%20space/55b1db0a67affd185896fd47c56359a0.jpg"),
+  assetUrl("/the%20space/0891f9bc0a60be5edb21cf3bcacad989.jpg"),
+  assetUrl("/the%20space/18334a9f073c6f22ee6662e969e83573.jpg"),
+  assetUrl("/the%20space/1dada97c9cae23d569df47d1a2432652.jpg"),
 ];
 
-// Duplicate for seamless loop
 const TRACK = [...IMAGES, ...IMAGES];
-
 const CARD_W = 280;
 const GAP = 12;
 const UNIT = CARD_W + GAP;

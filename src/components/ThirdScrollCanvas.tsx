@@ -1,5 +1,5 @@
 "use client";
-
+import { assetUrl } from "@/lib/asset";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,8 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const TOTAL_FRAMES = 300;
-const FRAME_PATH = (n: number) =>
-  `/third%20section%20scroll/ezgif-frame-${String(n).padStart(3, "0")}.jpg`;
+const FRAME_PATH = (n: number) => assetUrl(`/third%20section%20scroll/ezgif-frame-${String(n).padStart(3, "0")}.jpg`);
 
 const STORY_SCENES = [
   {

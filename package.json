@@ -1,5 +1,5 @@
 {
-  "name": "meridian-dev",
+  "name": "navis-luxury-cruises",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -31,5 +31,6 @@
     "playwright": "^1.61.1",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "description": "NAVIS Luxury Cruises - 3D Interactive Maritime Voyage Experience"
 }

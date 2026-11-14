@@ -1,3 +1,5 @@
+"use client";
+import { assetUrl } from "@/lib/asset";
 import CanvasWrapper from "@/components/CanvasWrapper";
 import Preloader from "@/components/Preloader";
 import FeatureCards from "@/components/FeatureCards";
@@ -13,7 +15,7 @@ const FEATURE_CARDS = [
     label: "Craft Drinks",
     title: "Handcrafted\nCocktails",
     desc: "Award-winning mixologists craft every drink with precision — served poolside, at the bar, or in your suite.",
-    img: "/designed%20for%20better%20experinece/IMG_8019.JPG.jpeg",
+    img: assetUrl("/designed%20for%20better%20experinece/IMG_8019.JPG.jpeg"),
     price: "Included",
     priceNote: "All drinks on board",
   },
@@ -21,7 +23,7 @@ const FEATURE_CARDS = [
     label: "Fine Dining",
     title: "World-Class\nCuisine",
     desc: "Five-star menus crafted by award-winning chefs — served with the ocean as your backdrop, every night.",
-    img: "/designed%20for%20better%20experinece/IMG_8020.JPG.jpeg",
+    img: assetUrl("/designed%20for%20better%20experinece/IMG_8020.JPG.jpeg"),
     price: "Included",
     priceNote: "All dining on board",
   },
@@ -29,7 +31,7 @@ const FEATURE_CARDS = [
     label: "Chef's Table",
     title: "The Kitchen\nExperience",
     desc: "An intimate dining experience — watch our executive chef craft each course right before your eyes.",
-    img: "/designed%20for%20better%20experinece/IMG_8044.JPG.jpeg",
+    img: assetUrl("/designed%20for%20better%20experinece/IMG_8044.JPG.jpeg"),
     price: "From $120",
     priceNote: "Per person",
   },
@@ -37,7 +39,7 @@ const FEATURE_CARDS = [
     label: "Nightlife",
     title: "Nights That\nNever End",
     desc: "Rooftop bars, live DJ sets, open-air dancing and handcrafted cocktails under a canopy of stars.",
-    img: "/designed%20for%20better%20experinece/IMG_8036.JPG.jpeg",
+    img: assetUrl("/designed%20for%20better%20experinece/IMG_8036.JPG.jpeg"),
     price: "Included",
     priceNote: "All entertainment",
   },
@@ -326,7 +328,7 @@ export default function Home() {
         {/* Big CTA card */}
         <div style={{ position: "relative", borderRadius: "24px", overflow: "hidden", height: "440px", marginTop: "40px" }}>
           <img
-            src="/designed%20for%20better%20experinece/IMG_8041.JPG.jpeg"
+            src={assetUrl("/designed%20for%20better%20experinece/IMG_8041.JPG.jpeg")}
             alt="Ship"
             style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 70%" }}
           />
@@ -361,8 +363,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
+      {/* Footer */}
+      <footer style={{ background: "#050811", borderTop: "1px solid rgba(255,255,255,0.08)", padding: "40px 24px", textAlign: "center" }}>
+        <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "14px", fontFamily: "var(--font-sans)", marginBottom: "8px" }}>
+          NAVIS Luxury Cruises &bull; Crafted by <strong>Atharv Hogade</strong>
+        </p>
+        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: "13px", fontFamily: "var(--font-sans)" }}>
+          GitHub: <a href="https://github.com/cyber-atharv" target="_blank" rel="noopener noreferrer" style={{ color: "#38bdf8", textDecoration: "none" }}>@cyber-atharv</a> &bull; Email: <a href="mailto:atharvhogade12@gmail.com" style={{ color: "#38bdf8", textDecoration: "none" }}>atharvhogade12@gmail.com</a>
+        </p>
+      </footer>
     </main>
   );
 }

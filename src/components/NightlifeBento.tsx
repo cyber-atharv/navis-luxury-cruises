@@ -1,53 +1,53 @@
 "use client";
-
+import { assetUrl } from "@/lib/asset";
 import { useState } from "react";
 
 const CARDS = [
   {
-    img: "/designed%20for%20better%20experinece/3e02681ec91f4def8d883c0fa6aa5004.jpg",
+    img: assetUrl("/designed%20for%20better%20experinece/3e02681ec91f4def8d883c0fa6aa5004.jpg"),
     label: "DJ & Live Sets",
     desc: "World-class DJs spinning sets as the ocean stretches endlessly around you.",
     gridColumn: "1 / 3", gridRow: "1 / 3",
     objectPosition: "center center",
   },
   {
-    img: "/designed%20for%20better%20experinece/4c9891b57000195c116d067e45754251.jpg",
+    img: assetUrl("/designed%20for%20better%20experinece/4c9891b57000195c116d067e45754251.jpg"),
     label: "Drinks With A View",
     desc: "Crafted cocktails served where the horizon never ends.",
     objectPosition: "center bottom",
   },
   {
-    img: "/designed%20for%20better%20experinece/5cc854dc50aebc5c63e6d6867e5421cc.jpg",
+    img: assetUrl("/designed%20for%20better%20experinece/5cc854dc50aebc5c63e6d6867e5421cc.jpg"),
     label: "Dance Floor",
     desc: "An open-air dancefloor under the stars, every night.",
     objectPosition: "center center",
   },
   {
-    img: "/designed%20for%20better%20experinece/18b95c852446fd37894db1c36d2d6d67.jpg",
+    img: assetUrl("/designed%20for%20better%20experinece/18b95c852446fd37894db1c36d2d6d67.jpg"),
     label: "Music Floor",
     desc: "Live saxophone, jazz sessions, and acoustic sets on deck.",
     objectPosition: "center bottom",
   },
   {
-    img: "/designed%20for%20better%20experinece/50d89a6f2d4183e0c3ec3dbfec284390.jpg",
+    img: assetUrl("/designed%20for%20better%20experinece/50d89a6f2d4183e0c3ec3dbfec284390.jpg"),
     label: "Sea Views",
     desc: "Every corner of the ship frames a breathtaking panorama.",
     objectPosition: "center center",
   },
   {
-    img: "/designed%20for%20better%20experinece/a4b48f8ec4ef12eb164d5be6d08074ff.jpg",
+    img: assetUrl("/designed%20for%20better%20experinece/a4b48f8ec4ef12eb164d5be6d08074ff.jpg"),
     label: "Music",
     desc: "The soundtrack to your voyage, curated for every mood.",
     objectPosition: "center center",
   },
   {
-    img: "/designed%20for%20better%20experinece/cd7c3c71ea73800270349aef08f89ffc.jpg",
+    img: assetUrl("/designed%20for%20better%20experinece/cd7c3c71ea73800270349aef08f89ffc.jpg"),
     label: "Cocktails",
     desc: "Bespoke cocktail menus crafted by award-winning mixologists.",
     objectPosition: "center center",
   },
   {
-    img: "/designed%20for%20better%20experinece/2c94fa773b4e02d052f067666bb68e33.jpg",
+    img: assetUrl("/designed%20for%20better%20experinece/2c94fa773b4e02d052f067666bb68e33.jpg"),
     label: "Rooftop Lounge",
     desc: "Golden hour drinks as the ship sails into the sunset.",
     gridColumn: "3 / 5",

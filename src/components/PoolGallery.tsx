@@ -1,14 +1,14 @@
 "use client";
-
+import { assetUrl } from "@/lib/asset";
 import { useState } from "react";
 
 const IMAGES = [
-  { src: "/the%20space/01.jpg", label: "Ship Pool Deck", desc: "Infinity pools at sea — where luxury meets the horizon.", objectPosition: "center center", gridColumn: "1 / 2", gridRow: "1 / 3" },
-  { src: "/the%20space/43f383b09e9d2766d9b3b9bb64425a06.jpg", label: "Cocktails Poolside", desc: "Sip crafted cocktails as the sun sets over open water.", objectPosition: "center center" },
-  { src: "/the%20space/55b1db0a67affd185896fd47c56359a0.jpg", label: "Tropical Drinks", desc: "Handcrafted tropical drinks to match the ocean breeze.", objectPosition: "center 60%" },
-  { src: "/the%20space/0891f9bc0a60be5edb21cf3bcacad989.jpg", label: "Poolside Lounge", desc: "Lounge in style as the world floats gently by.", objectPosition: "center center" },
-  { src: "/the%20space/18334a9f073c6f22ee6662e969e83573.jpg", label: "Fresh Drinks", desc: "Every glass crafted to perfection, every moment.", objectPosition: "center center", gridColumn: "3 / 4" },
-  { src: "/the%20space/1dada97c9cae23d569df47d1a2432652.jpg", label: "Rooftop Pool", desc: "Sky-high pool decks with views that go on forever.", objectPosition: "center center", gridColumn: "4 / 5" },
+  { src: assetUrl("/the%20space/01.jpg"), label: "Ship Pool Deck", desc: "Infinity pools at sea — where luxury meets the horizon.", objectPosition: "center center", gridColumn: "1 / 2", gridRow: "1 / 3" },
+  { src: assetUrl("/the%20space/43f383b09e9d2766d9b3b9bb64425a06.jpg"), label: "Cocktails Poolside", desc: "Sip crafted cocktails as the sun sets over open water.", objectPosition: "center center" },
+  { src: assetUrl("/the%20space/55b1db0a67affd185896fd47c56359a0.jpg"), label: "Tropical Drinks", desc: "Handcrafted tropical drinks to match the ocean breeze.", objectPosition: "center 60%" },
+  { src: assetUrl("/the%20space/0891f9bc0a60be5edb21cf3bcacad989.jpg"), label: "Poolside Lounge", desc: "Lounge in style as the world floats gently by.", objectPosition: "center center" },
+  { src: assetUrl("/the%20space/18334a9f073c6f22ee6662e969e83573.jpg"), label: "Fresh Drinks", desc: "Every glass crafted to perfection, every moment.", objectPosition: "center center", gridColumn: "3 / 4" },
+  { src: assetUrl("/the%20space/1dada97c9cae23d569df47d1a2432652.jpg"), label: "Rooftop Pool", desc: "Sky-high pool decks with views that go on forever.", objectPosition: "center center", gridColumn: "4 / 5" },
 ];
 
 export default function PoolGallery() {
